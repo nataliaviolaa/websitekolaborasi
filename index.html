@@ -6,13 +6,13 @@
     </head>
     <body>
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              // Redirect ke #home jika URL tidak memiliki hash
-              if (!window.location.hash) {
-                window.location.hash = "#home";
-              }
-            });
-          </script>          
+            // Redirect to home if no hash is present in the URL
+            window.onload = function() {
+                if (!window.location.hash) {
+                    window.location.hash = "#home";
+                }
+            };
+        </script>        
         <div class="header">
             <img src="header (1).png" alt="header">
         </div>
@@ -65,15 +65,19 @@
             <a href="#kerja" class="konten">Pelajari Tentang Kerjasama Internasional</a>
 
             <h2>🇮🇩 Pancasila: Nilai-Nilai yang Menginspirasi</h2>
-            <p>Pancasila tidak hanya menjadi dasar negara kita, tetapi juga <b>landasan nilai</b> yang relevan dalam membangun hubungan internasional yang lebih baik. Nilai-nilai dalam Pancasila seperti **keadilan sosial**, **persatuan**, dan **kerjasama** sangat selaras dengan tujuan SDGs, yang mengutamakan kemanusiaan dan kesejahteraan untuk semua.</p>
+            <p>Pancasila tidak hanya menjadi dasar negara kita, tetapi juga <b>landasan nilai</b> yang relevan dalam membangun hubungan internasional yang lebih baik. Nilai-nilai dalam Pancasila seperti <b>Keadilan Sosial</b>, <b>Persatuan</b>, dan <b>Kerjasama</b> sangat selaras dengan tujuan SDGs, yang mengutamakan kemanusiaan dan kesejahteraan untuk semua.</p>
             <a href="#pancasila" class="konten">Pelajari Lebih Lanjut tentang Pancasila</a>
 
             <h2>🌟 Mari Bersama Mewujudkan Dunia yang Lebih Baik!</h2>
-            <p>Dengan berpegang pada **SDGs**, berkolaborasi dalam **kerjasama internasional**, dan mengikuti **nilai-nilai Pancasila**, kita bisa membangun masa depan yang lebih berkelanjutan dan damai untuk dunia ini. Saya percaya, setiap dari kita memiliki peran untuk mewujudkan perubahan positif! 🌍💪</p>
+            <p>Dengan berpegang pada <b>SDGs</b>, berkolaborasi dalam <b>Kerjasama Internasional</b>, dan mengikuti <b>Nilai-Nilai Pancasila</b>, kita bisa membangun masa depan yang lebih berkelanjutan dan damai untuk dunia ini. Saya percaya, setiap dari kita memiliki peran untuk mewujudkan perubahan positif! 🌍💪</p>
             </div>
 
             <div id="sdgs" class="konten">
                 <h2>Apa itu SDGs? 🌍</h2>
+                <img src="sdgs.png" alt="Gambar SDGs 1" class="path-image">
+                <img src="kerjasama internasional.jpg" alt="Gambar SDGs 2" class="path-image">
+                <img src="bilateral1.jpg" alt="Gambar SDGs 3" class="path-image">
+        
                 <p>SDGs (Sustainable Development Goals) adalah sebuah rencana global yang disepakati oleh negara-negara di dunia untuk menciptakan keseimbangan dalam pembangunan. SDGs terdiri dari 17 tujuan utama yang bertujuan untuk mengakhiri kemiskinan, melindungi planet, dan memastikan kesejahteraan bagi semua orang pada tahun 2030. Secara singkat, SDGs adalah upaya bersama untuk menciptakan dunia yang lebih baik bagi generasi sekarang dan masa depan. 🌱</p>
             
                 <h2>SDGs ke-3 Kehidupan Sehat dan Sejahtera 💪🏽</h2>
@@ -358,24 +362,16 @@
                     <p>🌐 Regulasi seperti <b>International Health Regulations (IHR)</b> memungkinkan negara-negara berbagi informasi penting tentang wabah penyakit 🔔 dan bekerja sama untuk mencegah ancaman kesehatan yang dapat berdampak secara global.</p>
                 </div>                
       
-            <div id="mekanis" class="konten">
-                <h2>Mekanisme yang Menghubungkan SDGs dan Kerjasama Internasional</h2>
-                <p>Terdapat beberapa mekanisme yang menghubungkan SDGs dan kerjasama internasional, yaitu:</p>
-                <h3>a. Forum Internasional dan Organisasi Multilateral</h3>
-                <p>Seperti PBB, yang mengkoordinasikan pencapaian SDGs di seluruh dunia.</p>
-    
-                <h3>b. Perjanjian Internasional dan Konvensi Global</h3>
-                <p>Perjanjian internasional, seperti **Agenda 2030 untuk Pembangunan Berkelanjutan**, menjadi dasar kerjasama antarnegara.</p>
-    
-                <h3>c. Bantuan Pembangunan dan Keuangan Internasional</h3>
-                <p>Negara maju memberikan bantuan finansial untuk mendukung pencapaian SDGs, seperti dalam bidang kesehatan (SDG 3).</p>
-    
-                <h3>d. Transfer Teknologi dan Pengetahuan</h3>
-                <p>Kerjasama internasional dalam berbagi teknologi untuk mencapai SDGs, seperti energi terbarukan dan pendidikan.</p>
-    
-                <h3>e. Kemitraan Global</h3>
-                <p>Kerjasama antara sektor publik, swasta, masyarakat sipil, dan akademik dalam mencapai tujuan SDGs.</p>
-            </div>
+                <div id="mekanis" class="konten">
+                    <h2>Mekanisme yang Menghubungkan SDGs dan Kerjasama Internasional 🌍</h2>
+                    <img id="mekanisme" src="mekanisme.png" alt="Mekanisme SDG dan Kerjasama Internasional">
+                    <p>
+                        Kerjasama internasional memainkan peran penting dalam mendukung tercapainya tujuan <b>SDGS ke-3</b> yaitu "Good Health and Well-being" 💊. 
+                        Melalui kolaborasi dengan organisasi global seperti WHO 🏥 dan GAVI 💉, Indonesia dapat meningkatkan akses terhadap vaksin, layanan kesehatan, dan pelatihan tenaga medis 👨‍⚕️👩‍⚕️. 
+                        Hal ini membantu mengurangi penyakit menular dan memastikan kesehatan masyarakat lebih terjamin, sambil mendorong pertumbuhan tenaga kerja di bidang medis di tingkat lokal. 🤝
+                    </p>
+                </div>
+                
             <div id="pancasila" class="konten">
                 <h2>✨ SDGs dan Pancasila: Saling Mendukung</h2>
             <p><strong>1. Ketuhanan Yang Maha Esa:</strong> SDGs mendorong kehidupan yang lebih sejahtera sesuai dengan amanah Tuhan, seperti mengatasi kemiskinan (SDG 1) dan menjaga kesehatan (SDG 3).</p>
@@ -397,32 +393,26 @@
             </div>
             <div id="saran" class="konten">
                 <h2>Saran untuk Peningkatan Kesehatan dan Kesejahteraan</h2>
-                <p>Sebagai upaya untuk mendukung tercapainya tujuan SDGs ke-3, berikut adalah saran yang dapat diimplementasikan:</p>
-                    <p><strong>1. Edukasi dan Promosi Gaya Hidup Sehat:</strong> 
-                        Kampanye kesehatan melalui media sosial, seminar lokal, dan kerja sama dengan sekolah untuk mempromosikan pola makan sehat dan olahraga teratur.
-                    </li>
-                    <p>
-                        <strong>2. Peningkatan Akses Layanan Kesehatan di Daerah Terpencil:</strong> 
-                        Penerapan program mobile clinic, telemedicine, dan peningkatan insentif tenaga medis di wilayah terpencil.
-                    </li>
-                    <p>
-                        <strong>3. Pencegahan dan Penanganan Stunting:</strong> 
-                        Distribusi suplemen gizi, pelatihan kader posyandu, serta kerja sama dengan perusahaan pangan untuk menyediakan produk bergizi yang terjangkau.
-                    </li>
-                    <p>
-                        <strong>4. Mitigasi Risiko Kesehatan Akibat Perubahan Iklim:</strong> 
-                        Penyemprotan fogging secara berkala, edukasi kebersihan lingkungan, dan penyediaan alat deteksi dini untuk penyakit menular.
-                    </li>
-                    <p>
-                        <strong>5. Peningkatan Kesadaran Kesehatan Mental:</strong> 
-                        Pelatihan tenaga medis untuk deteksi gangguan mental, layanan konseling daring, dan penguatan komunitas dukungan.
-                    </li>
-                    <p>
-                        <strong>6. Memperkuat Ketahanan Sistem Kesehatan Pasca Pandemi:</strong> 
-                        Penguatan infrastruktur kesehatan, pelatihan kesiapsiagaan bencana, dan kebijakan mendukung produksi alat kesehatan lokal.
-                    </li> </p>
-            </div>
-
+                <p>Untuk mendukung tercapainya tujuan SDGs ke-3, berikut beberapa saran yang bisa dilakukan:</p>
+                <p><strong>1. Edukasi dan Kebiasaan Hidup Sehat:</strong> 
+                    Adakan kampanye lewat media sosial, sekolah, atau acara lokal untuk mengajarkan pola makan sehat dan olahraga.
+                </p>
+                <p><strong>2. Perbaiki Akses Kesehatan di Daerah Terpencil:</strong> 
+                    Bangun klinik keliling, gunakan telemedicine, dan beri dukungan lebih kepada tenaga kesehatan di sana.
+                </p>
+                <p><strong>3. Cegah dan Atasi Stunting:</strong> 
+                    Bagikan suplemen gizi, latih kader posyandu, dan kerja sama dengan perusahaan untuk makanan bergizi yang murah.
+                </p>
+                <p><strong>4. Cegah Penyakit Akibat Perubahan Iklim:</strong> 
+                    Lakukan fogging, ajarkan kebersihan lingkungan, dan siapkan alat deteksi dini penyakit.
+                </p>
+                <p><strong>5. Tingkatkan Kesadaran tentang Kesehatan Mental:</strong> 
+                    Latih tenaga medis agar bisa mendeteksi gangguan mental, sediakan layanan konseling online, dan bentuk komunitas pendukung.
+                </p>
+                <p><strong>6. Perkuat Sistem Kesehatan setelah Pandemi:</strong> 
+                    Tingkatkan fasilitas kesehatan, latih tim untuk bencana, dan dukung produksi alat kesehatan di dalam negeri.
+                </p>
+            </div>            
             <div id="reflek" class="konten">
                 <h2>📝 Refleksi: Pembelajaran dari SDGs, Kerjasama Internasional, dan Pancasila</h2>
     <p>Setelah mempelajari lebih dalam tentang <b>SDGs</b>, <b>Kerjasama Internasional</b>, dan <b>Pancasila</b>saya semakin memahami bahwa pencapaian tujuan pembangunan berkelanjutan tidak hanya membutuhkan tindakan dari satu negara saja, tetapi juga kerjasama antara negara-negara di seluruh dunia. Dalam dunia yang semakin terhubung ini, kolaborasi antarbangsa sangat diperlukan untuk menyelesaikan tantangan global seperti kemiskinan, ketidaksetaraan, dan perubahan iklim.</p>

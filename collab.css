@@ -72,7 +72,7 @@ li.dropdown {
     padding: 20px;
     position: relative; /* Tambahkan ini agar tidak bertabrakan dengan dropdown */
     z-index: 1; /* Supaya dropdown berada di atas konten */
-    background-image: url(bacckground.jpg);
+    background-image: url(bg.jpg);
     border: 3px solid #e7f072;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s eas
@@ -782,4 +782,35 @@ h1:hover, h2:hover, p:hover, h3:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar */
 }
 
+#mekanisme {
+    display: block; /* Mengatur agar gambar berada di tengah */
+    margin: 20px auto; /* Menambahkan jarak di atas dan bawah, serta meratakan ke tengah */
+    max-width: 80%; /* Gambar akan mengikuti lebar layar hingga maksimum 80% */
+    height: auto; /* Menjaga proporsi gambar agar tidak terdistorsi */
+    border: 3px solid #d9d9d9; /* Memberikan border halus */
+    border-radius: 10px; /* Menambahkan efek sudut melengkung */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan untuk kesan lebih profesional */
+    background-color: #f8f8f8; /* Warna latar belakang netral */
+    padding: 10px; /* Menambahkan ruang di dalam border */
+  }
 
+  /* Gambar dengan class 'path-image' */
+.path-image {
+    width: 400px; /* Menentukan ukuran gambar */
+    height: auto;
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan pada gambar */
+    transition: transform 0.3s ease; /* Efek saat hover */
+    margin: 10px; /* Jarak antar gambar */
+}
+
+/* Efek hover untuk gambar 'path-image' */
+.path-image:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat di hover */
+}
+
+/* Jika Anda ingin gambar-gambar tersebut disusun dalam satu baris tanpa div baru */
+#sdgs img {
+    display: inline-block; /* Menampilkan gambar dalam baris yang sama */
+    margin-right: 10px; /* Jarak antar gambar */
+}
